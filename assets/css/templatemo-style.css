@@ -643,6 +643,13 @@ figure.snip1321.hover:after {
     opacity: 0.9;
 }
 
+figure.snip1321.big-img:hover:after,
+figure.snip1321.big-img.hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0;
+}
+
 
 /* Contact Me */
 

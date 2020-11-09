@@ -35,6 +35,10 @@
       background-color: #F72C1F !important;
     }
 
+    .progress-bar-gitColor {
+      background-color: #E84E32 !important;
+    }
+
     .ciIcon {
       font-size: 48px;
       line-height: 20px;
@@ -56,7 +60,7 @@
   </style>
 </head>
 
-<body>
+<body onLoad="LoadOnce()">
   <div id="page-wraper">
     <!-- Sidebar Menu -->
     <div class="responsive-nav">
@@ -94,8 +98,9 @@
           <nav class="main-nav" role="navigation">
             <ul class="main-menu">
               <li><a href="#section1">About Me</a></li>
-              <li><a href="#section2">What I’m good at</a></li>
-              <li><a href="#section3">My Work</a></li>
+              <li><a href="#section2">Last Project</a></li>
+              <li><a href="#section3">What I’m good at</a></li>
+              <li><a href="#section4">My Work</a></li>
             </ul>
           </nav>
           <div class="copyright-text">
@@ -110,69 +115,119 @@
         <div class="section-heading">
           <h2>About Me</h2>
           <div class="line-dec"></div>
-          <span>My name is Jays Rahman Elfaiz. Usually called Jays. I am a student at STMIK Eresha, South
-            Tangerang. Three years struggling in the field of Web Development. PHP and Javascript are like everyday
-            food. Codeigniter, Laravel and Jquery are the snacks.</span>
-          <div class="about-button white-button mt-4">
-            <span class="main-menu">
-              <a href="#section2">More About Me</a>
-            </span>
-          </div>
-        </div>
-        <div class="left-image-post">
           <div class="row">
-            <div class="col-md-6 mt-5">
-              <div class="left-image">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-01.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-01.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search-plus"></i></a>
-                    <h4>Clinic App</h4>
-                    <span>HTML - PHP - JS</span>
-                  </figcaption>
-                </figure>
-              </div>
+            <div class="col">
+              <!-- <img src="assets/images/big-img.jpeg" alt="Responsive image" class="img-thumbnail img-fluid w-25"> -->
+              <figure class="snip1321 big-img mt-4">
+                <img src="assets/images/big-img.jpeg" alt="sq-sample26" class="img-fluid img-thumbnail" style="width: 70%;"/>
+                <figcaption>
+                  <a href="assets/images/big-img.jpeg" data-lightbox="image-1" data-title="About Image"><i
+                      class="fa fa-search-plus"></i></a>
+                </figcaption>
+              </figure>
             </div>
-            <div class="col-md-6">
-              <div class="right-text">
-                <h4>Clinik App</h4>
-                <p>
-                  This clinic application is the first project I did with my friends in the Dapurcoding. In it I play
-                  the role of working on Backend Developer. <span class="redMe font-weight-bold">(The company does not
-                    allow to
-                    display the website links
-                    here)</span>
-                </p>
+            <div class="col mt-5 pt-4">
+              <div class="mt-5"></div>
+              <span><h5 class="font-weight-normal">My name is Jays Rahman Elfaiz. Usually called Jays. I am a student at STMIK Eresha, South
+                Tangerang. Three years struggling in the field of Web Development. PHP and Javascript are like everyday
+                food. Codeigniter, Laravel and Jquery are the snacks.</h5></span>
+              <div class="about-button white-button mt-4">
+                <span class="main-menu">
+                  <a href="#section3">More About Me</a>
+                  &nbsp;&nbsp;
+                  <a href="#section2">Last Project</a>
+                </span>
               </div>
             </div>
           </div>
         </div>
-        <div class="right-image-post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="left-text">
-                <h4>Berkah Group</h4>
-                <p>
-                  For my second project, I along with the Dapurcoding team created a company profile website for the
-                  Berkah Group. In it I play the role of working on the Backend Developer.
-                </p>
-                <div class="white-button">
-                  <a href="https://www.berkahgroup.co.id">View Website</a>
+      </div>
+        </section>
+
+        <section class="section last-project" data-section="section2">
+          <div class="container">
+        <div class="section-heading">
+          <h2>Last Project</h2>
+          <div class="line-dec"></div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6 mt-5 pt-2">
+                <div class="left-image">
+                  <figure class="snip1321">
+                    <img src="assets/images/last-project.png" alt="sq-sample26" />
+                    <figcaption>
+                      <a href="assets/images/last-project.png" data-lightbox="image-1" data-title="Tokuonline"><i
+                          class="fa fa-search-plus"></i></a>
+                      <h4>Tokuonline</h4>
+                      <span>HTML - PHP - JS</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Tokuonline</h4>
+                  <p>
+                    Tokuonline is a B2B marketplace owned by Seraya Makmur Indonesia which was built to make it easier for traders to get their goods online. I made this with two of my friends at this company. I am a fullstack web developer in this project.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://tokuonline.com/" target="_blank">Visit Website</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mt-4">
-              <div class="right-image">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-02.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-02.jpg" data-lightbox="image-1" data-title="Caption"><i
+          </div>
+          <!-- <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6 mt-4">
+                <div class="left-image">
+                  <figure class="snip1321">
+                    <img src="assets/images/before-last-project.png" alt="sq-sample26" />
+                    <figcaption>
+                      <a href="assets/images/before-last-project.png" data-lightbox="image-1" data-title="Caption"><i
+                          class="fa fa-search-plus"></i></a>
+                      <h4>SMI x BL API</h4>
+                      <span>HTML - PHP - JS</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>SMI x BL API</h4>
+                  <p>
+                    This clinic application is the first project I did with my friends in the Dapurcoding. In it I play
+                    the role of working on Backend Developer. <span class="redMe font-weight-bold">(The company does not
+                      allow to
+                      display the website links
+                      here)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>SMI x BL API</h4>
+                  <p>
+                    This is a website that I built to connect the Bukalapak API with Seraya Makmur Indonesia. I created this project to make it easier to enter product data into Bukalapak without having to open the Bukalapak application.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <div class="right-image">
+                  <figure class="snip1321">
+                    <img src="assets/images/before-last-project.png" alt="sq-sample26" />
+                    <figcaption>
+                      <a href="assets/images/before-last-project.png" data-lightbox="image-1" data-title="SMI x BL API"><i
                         class="fa fa-search-plus"></i></a>
-                    <h4>Berkah Group</h4>
+                    <h4>SMI x BL API</h4>
                     <span>HTML - PHP - JS</span>
-                  </figcaption>
-                </figure>
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
@@ -180,7 +235,7 @@
       </div>
     </section>
 
-    <section class="section my-services" data-section="section2">
+    <section class="section my-services" data-section="section3">
       <div class="container">
         <div class="section-heading">
           <h2>What I’m good at?</h2>
@@ -188,61 +243,15 @@
           <span>I
             have been struggling in the field of Web Development since I was in grade 1 vocational school. At that time
             I began to explore Web Development by using the PHP programming language. Learn about CSS and JavaScript
-            too. And already this year I learned PHP Framework (Codeigniter and Laravel) and also javascript
-            (jQuery).</span>
+            too. I can work professionally in this field because I have confidence in my skills.</span>
         </div>
         <div class="row">
-          <!-- <div class="col-md-6">
-            <div class="service-item">
-              <div class="first-service-icon service-icon"></div>
-              <li class="fa fa-code-fork"></li>
-              <h4>HTML5 &amp; CSS3</h4>
-              <p>
-                Phasellus non convallis dolor. Integer tempor hendrerit arcu
-                at bibendum. Sed ac ante non metus vehicula congue quis eget
-                eros.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="second-service-icon service-icon"></div>
-              <h4>Creative Ideas</h4>
-              <p>
-                Proin lacus massa, eleifend sed fermentum in, dignissim vel
-                metus. Nunc accumsan leo nec felis porttitor, ultricies
-                faucibus purus mollis.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="third-service-icon service-icon"></div>
-              <h4>Easy Customize</h4>
-              <p>
-                Integer suscipit condimentum aliquet. Nam quis risus metus.
-                Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
-                dui.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="fourth-service-icon service-icon"></div>
-              <h4>Admin Dashboard</h4>
-              <p>
-                Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                leo nec felis porttitor.
-              </p>
-            </div>
-          </div> -->
           <div class="col-md mt-5">
             <p class="text-center"><i class="fa fa-laptop-code fa-3x"></i></p>
             <p class="text-center">Web Developer</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%"
-                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
             </div>
           </div>
           <div class="col-md mt-5">
@@ -279,18 +288,40 @@
                 style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
             </div>
           </div>
+          <div class="col-md mt-5">
+            <p class="text-center"><img src="assets/images/git-icon.png" alt="" style="width: 47px;"></p>
+            <p class="text-center">Git</p>
+            <div class="progress">
+              <div id="gitColor" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="col-md mt-5">
+            <p class="text-center"><img src="assets/images/github-icon.png" alt="" style="width: 47px;"></p>
+            <p class="text-center">Github</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar"
+                style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          
+        </div>
+        <div class="white-button mt-5 pt-5 text-center">
+          <span class="main-menu">
+            <a href="#section4">My Projects</a>
+          </span>
         </div>
       </div>
     </section>
 
-    <section class="section my-work" data-section="section3">
+    <section class="section my-work" data-section="section4">
       <div class="container">
         <div class="section-heading">
           <h2>My Work</h2>
           <div class="line-dec"></div>
-          <span>I once worked at a startup coding called Dapurcoding. Me and the team there have been working on two
-            projects. I have also worked on several projects myself. I will always upgrade my skills every day. Want to
-            know me better?</span>
+          <span>I once worked at a coding startup called Dapurcoding. My team and I have worked on two projects. I have also worked on several projects myself. Now I am working for a company called Seraya Makmur Indonesia. I work as a fullstack web developer there. I created a marketplace from scratch with three of my friends and connected the Bukalapak API with this company. I will always improve my skills every day. Want to know me better?</span>
           <div class="about-button white-button mt-4">
             <a href="mailto:jaisjezz41@gmail.com">Hire Me</a>
           </div>
@@ -309,9 +340,34 @@
 
               <div class="isotope-item" data-type="team">
                 <figure class="snip1321">
+                  <img src="assets/images/last-project.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="assets/images/last-project.png" data-lightbox="image-1" data-title="Tokuonline"><i
+                        class="fa fa-search-plus"></i></a>
+                    <a href="https://tokuonline.com/" target="_blank"><i class="fa fa-eye"></i></a>
+                    <h4>Tokuonline</h4>
+                    <span>HTML - PHP - JS</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="my">
+                <figure class="snip1321">
+                  <img src="assets/images/before-last-project.png" alt="sq-sample26" />
+                  <figcaption>
+                    <a href="assets/images/before-last-project.png" data-lightbox="image-1" data-title="SMI x BL API"><i
+                        class="fa fa-search-plus"></i></a>
+                    <h4>SMI x BL API</h4>
+                    <span>HTML - PHP - JS</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="team">
+                <figure class="snip1321">
                   <img src="assets/images/portfolio-01.jpg" alt="sq-sample26" />
                   <figcaption>
-                    <a href="assets/images/portfolio-01.jpg" data-lightbox="image-1" data-title="Caption"><i
+                    <a href="assets/images/portfolio-01.jpg" data-lightbox="image-1" data-title="Clinic App"><i
                         class="fa fa-search-plus"></i></a>
                     <h4>Clinic App</h4>
                     <span>HTML - PHP - JS</span>
@@ -323,7 +379,7 @@
                 <figure class="snip1321">
                   <img src="assets/images/portfolio-02.jpg" alt="sq-sample26" />
                   <figcaption>
-                    <a href="assets/images/portfolio-02.jpg" data-lightbox="image-1" data-title="Caption"><i
+                    <a href="assets/images/portfolio-02.jpg" data-lightbox="image-1" data-title="Berkah Group"><i
                         class="fa fa-search-plus"></i></a>
                     <a href="https://www.berkahgroup.co.id/"><i class="fa fa-eye"></i></a>
                     <h4>Berkah Group</h4>
@@ -336,7 +392,7 @@
                 <figure class="snip1321">
                   <img src="assets/images/portfolio-03.jpg" alt="sq-sample26" />
                   <figcaption>
-                    <a href="assets/images/portfolio-03.jpg" data-lightbox="image-1" data-title="Caption"><i
+                    <a href="assets/images/portfolio-03.jpg" data-lightbox="image-1" data-title="Test Dumbways"><i
                         class="fa fa-search-plus"></i></a>
                     <a href="https://github.com/jays41/test-dumbways.git"><i class="fa fa-code-branch"></i></a>
                     <h4>Test Dumbways</h4>
@@ -349,7 +405,7 @@
                 <figure class="snip1321">
                   <img src="assets/images/portfolio-04.jpg" alt="sq-sample26" />
                   <figcaption>
-                    <a href="assets/images/portfolio-04.jpg" data-lightbox="image-1" data-title="Caption"><i
+                    <a href="assets/images/portfolio-04.jpg" data-lightbox="image-1" data-title="Test Aplikasi Sederhana"><i
                         class="fa fa-search-plus"></i></a>
                     <a href="https://github.com/jays41/test-aplikasi-sederhana.git"><i
                         class="fa fa-code-branch"></i></a>
@@ -376,6 +432,13 @@
   <script src="assets/js/lightbox.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <script language=" JavaScript" >
+    function LoadOnce() 
+    { 
+    window.location.reload(true);
+    setTimeout(function(){ window.location.reload(false) }, 500);
+    }
+    </script>
   <script>
     //according to loftblog tut
     $(".main-menu li:first").addClass("active");
@@ -430,6 +493,7 @@
       $("#codeigniterColor").addClass("progress-bar-codeigniterColor");
       $("#jqueryColor").addClass("progress-bar-jqueryColor");
       $("#laravelColor").addClass("progress-bar-laravelColor");
+      $("#gitColor").addClass("progress-bar-gitColor");
     });
   </script>
 </body>
